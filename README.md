@@ -1,4 +1,5 @@
 # macOS World Clock
+<img width="134" height="36" alt="image" src="https://github.com/user-attachments/assets/8185404d-15d7-47ca-a14a-652758c30525" />
 
 A lightweight macOS menu bar application to keep track of multiple time zones at a glance.
 
