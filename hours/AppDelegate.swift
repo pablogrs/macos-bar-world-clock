@@ -63,7 +63,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         // Compact display for the menu bar
-        statusItem?.button?.title = timeStrings.isEmpty ? "Hours" : timeStrings.joined(separator: "  ")
+        statusItem?.button?.title = timeStrings.isEmpty ? "World Clock" : timeStrings.joined(separator: "  ")
     }
     
     @objc func settingsChanged() {
@@ -109,7 +109,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(NSMenuItem.separator())
         
         // Add quit item
-        let quitItem = NSMenuItem(title: "Quit Hours", action: #selector(quitApplication), keyEquivalent: "q")
+        let quitItem = NSMenuItem(title: "Quit macOS World Clock", action: #selector(quitApplication), keyEquivalent: "q")
         quitItem.target = self
         menu.addItem(quitItem)
         
@@ -142,7 +142,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             window.center()
             window.setFrameAutosaveName("Settings")
             window.contentView = NSHostingView(rootView: contentView)
-            window.title = "Hours Configuration"
+            window.title = "World Clock Configuration"
             window.isReleasedWhenClosed = false // Keep the window instance
             settingsWindow = window
         }

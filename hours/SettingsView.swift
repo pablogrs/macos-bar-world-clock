@@ -10,7 +10,7 @@ struct SettingsView: View {
     
     var body: some View {
         VStack(spacing: 16) {
-            Text("Hours Configuration")
+            Text("World Clock Configuration")
                 .font(.title2)
                 .fontWeight(.bold)
             
